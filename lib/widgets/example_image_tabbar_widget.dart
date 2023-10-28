@@ -42,9 +42,9 @@ class _ExampleImageTabBarState extends State<ExampleImageTabBar>
       mainAxisAlignment: MainAxisAlignment.spaceAround,
       children: [
         PreferredSize(
-          preferredSize: const Size.fromHeight(20),
+          preferredSize: const Size.fromHeight(10),
           child: SizedBox(
-            height: 20,
+            height: 10,
             child: TabBar(
               indicator: BoxDecoration(
                 borderRadius: BorderRadius.circular(20), // Creates border

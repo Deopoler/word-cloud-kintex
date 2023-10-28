@@ -35,8 +35,8 @@ class _UploadImageState extends State<UploadImage> {
             boxShadow: [
               BoxShadow(
                 color: Colors.blueGrey.withOpacity(0.5),
-                spreadRadius: 3,
-                blurRadius: 3,
+                spreadRadius: 2,
+                blurRadius: 2,
                 offset: const Offset(0, 4), // changes position of shadow
               ),
             ],
@@ -46,7 +46,7 @@ class _UploadImageState extends State<UploadImage> {
               color: Colors.white,
               borderRadius: BorderRadius.circular(15.0),
             ),
-            padding: const EdgeInsets.symmetric(vertical: 50.0),
+            padding: const EdgeInsets.symmetric(vertical: 25.0),
             child: Center(
               child: Container(
                 decoration: BoxDecoration(

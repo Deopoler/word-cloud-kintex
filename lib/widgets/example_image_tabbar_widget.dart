@@ -22,7 +22,12 @@ class _ExampleImageTabBarState extends State<ExampleImageTabBar>
     _nestedTabController = TabController(
       length: 3,
       vsync: this,
-    );
+    )..addListener(() {
+        _everySecond.cancel();
+        _everySecond = Timer.periodic(const Duration(seconds: 3), (Timer t) {
+          _nestedTabController.animateTo((_nestedTabController.index + 1) % 3);
+        });
+      });
 
     _everySecond = Timer.periodic(const Duration(seconds: 3), (Timer t) {
       _nestedTabController.animateTo((_nestedTabController.index + 1) % 3);

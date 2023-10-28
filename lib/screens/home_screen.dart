@@ -12,7 +12,7 @@ class HomeScreen extends StatelessWidget {
       appBar: AppBar(
         toolbarHeight: 100,
         title: SizedBox(
-          height: 200,
+          height: 100,
           child: Row(
             children: [
               Image.asset(
@@ -36,7 +36,7 @@ class HomeScreen extends StatelessWidget {
           child: ListView(
             children: [
               const SizedBox(
-                height: 50,
+                height: 20,
               ),
               Center(
                 child: RichText(
@@ -57,6 +57,15 @@ class HomeScreen extends StatelessWidget {
               const SizedBox(height: 30),
               const ExampleImageTabBar(),
               const UploadImage(),
+              const SizedBox(height: 10),
+              Column(
+                children: [
+                  Text(
+                    "앨범 선택",
+                    style: GoogleFonts.poppins(fontSize: 20),
+                  ),
+                ],
+              ),
               const SizedBox(height: 100),
             ],
           ),

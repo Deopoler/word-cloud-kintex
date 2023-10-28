@@ -29,7 +29,7 @@ class _UploadImageState extends State<UploadImage> {
           getImage(ImageSource.gallery);
         },
         child: Container(
-          margin: const EdgeInsets.symmetric(horizontal: 50.0),
+          margin: const EdgeInsets.symmetric(horizontal: 10.0),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(15.0),
             boxShadow: [

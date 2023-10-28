@@ -43,20 +43,20 @@ class HomeScreen extends StatelessWidget {
                   text: TextSpan(
                     text: "Create",
                     style: GoogleFonts.poppins(
-                        fontSize: 50, fontWeight: FontWeight.bold),
+                        fontSize: 30, fontWeight: FontWeight.bold),
                     children: [
                       TextSpan(
                         text: " your original arts of words",
                         style: GoogleFonts.poppins(
-                            fontSize: 50, fontWeight: FontWeight.w400),
+                            fontSize: 30, fontWeight: FontWeight.w400),
                       ),
                     ],
                   ),
                 ),
               ),
-              const SizedBox(height: 50),
+              const SizedBox(height: 30),
               const ExampleImageTabBar(),
-              const SizedBox(height: 50),
+              const SizedBox(height: 20),
               const UploadImage(),
               const SizedBox(height: 100),
             ],

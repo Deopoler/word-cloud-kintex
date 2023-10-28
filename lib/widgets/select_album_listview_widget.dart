@@ -23,7 +23,7 @@ class SelectAlbumListView extends StatelessWidget {
                 borderRadius: BorderRadius.circular(20),
                 border: Border.all(
                   color: Colors.blue,
-                  width: 1,
+                  width: 2.5,
                 ),
               ),
               child: Padding(

@@ -56,7 +56,6 @@ class HomeScreen extends StatelessWidget {
               ),
               const SizedBox(height: 30),
               const ExampleImageTabBar(),
-              const SizedBox(height: 20),
               const UploadImage(),
               const SizedBox(height: 100),
             ],

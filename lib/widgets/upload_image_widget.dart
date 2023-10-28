@@ -28,60 +28,39 @@ class _UploadImageState extends State<UploadImage> {
         onTap: () {
           getImage(ImageSource.gallery);
         },
-        child: Container(
-          margin: const EdgeInsets.symmetric(horizontal: 10.0),
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(15.0),
-            boxShadow: [
-              BoxShadow(
-                color: Colors.blueGrey.withOpacity(0.5),
-                spreadRadius: 2,
-                blurRadius: 2,
-                offset: const Offset(0, 4), // changes position of shadow
-              ),
-            ],
-          ),
+        child: Center(
           child: Container(
             decoration: BoxDecoration(
-              color: Colors.white,
+              color: Colors.blue,
               borderRadius: BorderRadius.circular(15.0),
             ),
-            padding: const EdgeInsets.symmetric(vertical: 25.0),
-            child: Center(
-              child: Container(
-                decoration: BoxDecoration(
-                  color: Colors.blue,
-                  borderRadius: BorderRadius.circular(15.0),
+            padding: const EdgeInsets.all(10),
+            width: 170,
+            child: Column(
+              children: [
+                const Icon(
+                  Icons.image,
+                  size: 50,
+                  color: Colors.white,
                 ),
-                padding: const EdgeInsets.all(10),
-                width: 200,
-                child: Column(
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
                     const Icon(
-                      Icons.image,
-                      size: 100,
+                      Icons.upload,
                       color: Colors.white,
                     ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        const Icon(
-                          Icons.upload,
-                          color: Colors.white,
-                        ),
-                        Text(
-                          "Upload Image",
-                          style: GoogleFonts.poppins(
-                            fontSize: 20,
-                            fontWeight: FontWeight.w500,
-                            color: Colors.white,
-                          ),
-                        ),
-                      ],
+                    Text(
+                      "Upload Image",
+                      style: GoogleFonts.poppins(
+                        fontSize: 15,
+                        fontWeight: FontWeight.w500,
+                        color: Colors.white,
+                      ),
                     ),
                   ],
                 ),
-              ),
+              ],
             ),
           ),
         ),

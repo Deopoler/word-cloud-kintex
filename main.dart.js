@@ -66941,7 +66941,7 @@ A.a_J.prototype={
 $2(a,b){return B.eC},
 $S:416}
 A.a_I.prototype={
-$2(a,b){var s=null,r=A.Ac(20),q=new A.bA(B.ba,1,B.a7,-1)
+$2(a,b){var s=null,r=A.Ac(20),q=new A.bA(B.ba,2.5,B.a7,-1)
 return A.nz(s,new A.ei(B.aB,A.ZX(A.a([A.vQ("\uc568\ubc94 \uc81c\ubaa9",s,s,A.zz().$1$fontSize(15)),A.nz(s,s,B.ba,s,s,50,s,s,50)],t.F),B.bO,B.hc,B.bU),s),s,s,new A.dz(s,s,new A.dc(q,q,q,q),r,s,s,B.aS),s,s,s,s)},
 $S:417}
 A.wc.prototype={

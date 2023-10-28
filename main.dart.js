@@ -66743,7 +66743,7 @@ s.n()},
 M(a){var s,r=null,q=A.cU(a,r,t.w).w,p=A.qJ(20),o=this.d
 o===$&&A.b()
 s=t.F
-return A.aec(A.a([new A.Ex(A.mx(new A.vK(B.Bs,o,new A.dt(B.El,r,r,p,r,r,B.aA),B.vb,B.E,B.i,r),20,r),B.HD,r),B.v7,A.mx(new A.vL(o,A.a([A.V9("assets/example1.png",r,r),A.V9("assets/example2.png",r,r),A.V9("assets/example3.png",r,r)],s),r),q.a.b*0.3,r)],s),B.E1)}}
+return A.aec(A.a([new A.Ex(A.mx(new A.vK(B.Bs,o,new A.dt(B.El,r,r,p,r,r,B.aA),B.vb,B.E,B.i,r),10,r),B.HD,r),B.v7,A.mx(new A.vL(o,A.a([A.V9("assets/example1.png",r,r),A.V9("assets/example2.png",r,r),A.V9("assets/example3.png",r,r)],s),r),q.a.b*0.3,r)],s),B.E1)}}
 A.a4q.prototype={
 $1(a){var s=this.a.d
 s===$&&A.b()
@@ -66773,7 +66773,7 @@ return A.S(null,r)}})
 return A.T($async$pI,r)},
 M(a){var s,r,q,p,o=null,n=this.e
 if(n==null){n=A.qJ(15)
-s=A.a([new A.ho(3,B.f7,A.a_(B.c.aR(127.5),96,125,139),B.EU,3)],t.sq)
+s=A.a([new A.ho(2,B.f7,A.a_(B.c.aR(127.5),96,125,139),B.EU,2)],t.sq)
 r=A.qJ(15)
 q=A.qJ(15)
 p=t.F
@@ -69187,7 +69187,7 @@ B.zr=new A.aI(-38e3)
 B.ag=new A.b9(0,0,0,0)
 B.P2=new A.b9(0,0,0,10)
 B.zs=new A.b9(0,13,0,13)
-B.zt=new A.b9(0,50,0,50)
+B.zt=new A.b9(0,25,0,25)
 B.zu=new A.b9(10,0,10,0)
 B.zv=new A.b9(10,10,10,10)
 B.jP=new A.b9(16,0,16,0)
@@ -70686,7 +70686,7 @@ B.v0=new A.am(B.fU,!0,!1,!1,!1)
 B.Hx=new A.am(B.cC,!0,!1,!1,!1)
 B.Hy=new A.am(B.cC,!0,!0,!1,!1)
 B.HB=new A.W(1e5,1e5)
-B.HD=new A.W(1/0,20)
+B.HD=new A.W(1/0,10)
 B.HE=new A.W(1/0,46)
 B.hL=new A.i3(0,0,null,null)
 B.HG=new A.i3(null,100,null,null)

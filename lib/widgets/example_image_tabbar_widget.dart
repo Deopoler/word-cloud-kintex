@@ -74,9 +74,6 @@ class _ExampleImageTabBarState extends State<ExampleImageTabBar>
             ),
           ),
         ),
-        const SizedBox(
-          height: 10,
-        ),
         SizedBox(
           height: screenHeight * 0.3,
           child: TabBarView(

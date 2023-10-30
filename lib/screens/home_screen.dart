@@ -1,11 +1,49 @@
+import 'dart:typed_data';
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:word_cloud_kintex/services/wordcloud_service.dart';
 import 'package:word_cloud_kintex/widgets/example_image_tabbar_widget.dart';
 import 'package:word_cloud_kintex/widgets/select_album_listview_widget.dart';
 import 'package:word_cloud_kintex/widgets/upload_image_widget.dart';
 
-class HomeScreen extends StatelessWidget {
+class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
+
+  @override
+  State<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+  Image? wordcloudImage;
+  Uint8List? selectedImage;
+  int selectedAlbum = 0;
+
+  Future<Uint8List>? image;
+
+  @override
+  void initState() {
+    super.initState();
+    image = null;
+  }
+
+  void selectImage(Uint8List value) {
+    selectedImage = value;
+  }
+
+  void selectAlbum(int value) {
+    selectedAlbum = value;
+  }
+
+  void onSubmit() {
+    if (selectedImage == null) {
+      return;
+    }
+    print("submit");
+    setState(() {
+      image = WordCloudService.getWordCloudImage(selectedImage, selectedAlbum);
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -56,7 +94,7 @@ class HomeScreen extends StatelessWidget {
             ),
             const SizedBox(height: 30),
             const ExampleImageTabBar(),
-            const UploadImage(),
+            UploadImage(selectImage: selectImage, priorImage: selectedImage),
             const SizedBox(height: 10),
             Center(
               child: Text(
@@ -65,20 +103,33 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 10),
-            const SelectAlbumListView(),
+            SelectAlbumListView(
+              selectAlbum: selectAlbum,
+            ),
             const SizedBox(height: 20),
             FilledButton(
               style: const ButtonStyle(
                 backgroundColor: MaterialStatePropertyAll<Color>(Colors.blue),
               ),
-              onPressed: () {},
+              onPressed: onSubmit,
               child: Text(
                 "Submit",
                 style: GoogleFonts.poppins(
                     fontSize: 20, fontWeight: FontWeight.w700),
               ),
             ),
-            const SizedBox(height: 100),
+            FutureBuilder(
+                future: image,
+                builder: (context, snapshot) {
+                  if (snapshot.hasData) {
+                    return Image.memory(snapshot.data!);
+                  } else if (snapshot.hasError) {
+                    return Text(snapshot.error.toString());
+                  } else {
+                    return Container();
+                  }
+                }),
+            const SizedBox(height: 300),
           ],
         ),
       ),

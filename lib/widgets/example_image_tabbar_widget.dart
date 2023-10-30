@@ -35,12 +35,6 @@ class _ExampleImageTabBarState extends State<ExampleImageTabBar>
   }
 
   @override
-  void dispose() {
-    super.dispose();
-    _nestedTabController.dispose();
-  }
-
-  @override
   Widget build(BuildContext context) {
     double screenHeight = MediaQuery.of(context).size.height;
     return Column(

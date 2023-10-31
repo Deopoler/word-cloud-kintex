@@ -4,7 +4,7 @@ import 'dart:typed_data';
 import 'package:http/http.dart' as http;
 
 class WordCloudService {
-  static const String baseURL = "https://deopoler.pythonanywhere.com/";
+  static const String baseURL = "https://word-cloud-kintex-api.onrender.com/";
   static String? location;
 
   static Future<Uint8List> getWordCloudImage(imageByte, albumNum) async {

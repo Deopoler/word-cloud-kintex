@@ -22378,7 +22378,7 @@ Ih(a,b){return A.avr(a,b)},
 avr(a,b){var s=0,r=A.W(t.G),q,p=2,o,n,m,l,k,j,i,h,g,f,e,d,c
 var $async$Ih=A.R(function(a1,a2){if(a1===1){o=a2
 s=p}while(true)switch(s){case 0:p=4
-n=A.fy("https://deopoler.pythonanywhere.com/",0,null)
+n=A.fy("https://word-cloud-kintex-api.onrender.com/",0,null)
 m=A.asU("POST",n)
 g=A.aeo(a,t.Cm)
 f=a.length

@@ -19,7 +19,7 @@ class _UploadImageState extends State<UploadImage> {
   XFile? image;
 
   Future getImage(ImageSource media) async {
-    var img = await picker.pickImage(source: media);
+    var img = await picker.pickImage(source: media, maxWidth: 500, maxHeight: 500);
 
     setState(() {
       image = img;

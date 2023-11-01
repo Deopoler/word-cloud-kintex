@@ -143,9 +143,13 @@ class _HomeScreenState extends State<HomeScreen> {
                             final file = XFile.fromData(snapshot.data!,
                                 mimeType: 'image/png', name: 'resultImage.png');
 
-                            Share.shareXFiles([file],
-                                text:
-                                    '자신만의 워드클라우드 생성하기!\nhttps://deopoler.github.io/word-cloud-kintex/');
+                            Share.shareXFiles(
+                              [file],
+                              text:
+                                  '자신만의 워드클라우드 생성하기!\nhttps://deopoler.github.io/word-cloud-kintex/',
+                              subject:
+                                  '자신만의 워드클라우드 생성하기!\nhttps://deopoler.github.io/word-cloud-kintex/',
+                            );
                           },
                         ),
                       ],

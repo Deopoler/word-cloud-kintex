@@ -69507,7 +69507,7 @@ A.a84.prototype={
 $0(){var s,r="image/png",q=this.a.b
 q.toString
 A.Cg(0,!1)
-s=new A.dw(r,"",$,null)
+s=new A.dw(r,"resultImage.png",$,null)
 q=A.ar7([q],r)
 s.f=q
 q=(self.URL||self.webkitURL).createObjectURL(q)

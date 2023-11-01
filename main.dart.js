@@ -22617,9 +22617,9 @@ if(!A.anl(a.charCodeAt(b)))return!1
 if(a.charCodeAt(b+1)!==58)return!1
 if(s===r)return!0
 return a.charCodeAt(r)===47},
-afl(a,b){var s=0,r=A.S(t.vS),q
-var $async$afl=A.O(function(c,d){if(c===1)return A.P(d,r)
-while(true)switch(s){case 0:q=$.aov().ie(a,null,null,b)
+afl(a,b,c){var s=0,r=A.S(t.vS),q
+var $async$afl=A.O(function(d,e){if(d===1)return A.P(e,r)
+while(true)switch(s){case 0:q=$.aov().ie(a,null,b,c)
 s=1
 break
 case 1:return A.Q(q,r)}})
@@ -68529,6 +68529,8 @@ s=3
 break
 case 5:o=t.z
 m=A.z(o,o)
+l=c.length!==0
+if(l===!0)m.m(0,"title",c)
 l=d.length!==0
 if(l===!0)m.m(0,"text",d)
 if(j.length!==0)m.m(0,"files",j)
@@ -68548,6 +68550,7 @@ P4(a,b,c,d,e){var s=0,r=A.S(t.vS),q,p,o,n
 var $async$qT=A.O(function(f,g){if(f===1)return A.P(g,r)
 while(true)switch(s){case 0:o=t.N
 n=A.aJ(["paths",a,"mimeTypes",b],o,t.z)
+n.m(0,"subject",d)
 n.m(0,"text",e)
 s=3
 return A.L(B.FK.ip("shareFilesWithResult",n,!1,o),$async$qT)
@@ -69504,16 +69507,16 @@ if(q!=null)return A.l2(J.dA(q),r,r,r)
 else return A.o5(r,r,r,r,r,r,r,r)}},
 $S:129}
 A.a84.prototype={
-$0(){var s,r="image/png",q=this.a.b
-q.toString
+$0(){var s,r="image/png",q="\uc790\uc2e0\ub9cc\uc758 \uc6cc\ub4dc\ud074\ub77c\uc6b0\ub4dc \uc0dd\uc131\ud558\uae30!\nhttps://deopoler.github.io/word-cloud-kintex/",p=this.a.b
+p.toString
 A.Cg(0,!1)
 s=new A.dw(r,"resultImage.png",$,null)
-q=A.ar7([q],r)
-s.f=q
-q=(self.URL||self.webkitURL).createObjectURL(q)
-q.toString
-s.c=q
-A.afl(A.a([s],t.FQ),"\uc790\uc2e0\ub9cc\uc758 \uc6cc\ub4dc\ud074\ub77c\uc6b0\ub4dc \uc0dd\uc131\ud558\uae30!\nhttps://deopoler.github.io/word-cloud-kintex/")},
+p=A.ar7([p],r)
+s.f=p
+p=(self.URL||self.webkitURL).createObjectURL(p)
+p.toString
+s.c=p
+A.afl(A.a([s],t.FQ),q,q)},
 $S:0}
 A.tw.prototype={
 am(){return new A.Kr(null,null,B.l)}}

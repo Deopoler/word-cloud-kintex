@@ -67577,35 +67577,44 @@ if((s.a.a&30)===0)s.it(a)},
 $S:62}
 A.X3.prototype={
 q5(a,b,c,d){return this.a7w(a,b,c,d)},
-a7w(a,a0,a1,a2){var s=0,r=A.W(t.rx),q,p=2,o,n=this,m,l,k,j,i,h,g,f,e,d,c,b
-var $async$q5=A.R(function(a3,a4){if(a3===1){o=a4
-s=p}while(true)switch(s){case 0:q=a
+a7w(a2,a3,a4,a5){var s=0,r=A.W(t.rx),q,p=2,o,n=this,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1
+var $async$q5=A.R(function(a6,a7){if(a6===1){o=a7
+s=p}while(true)switch(s){case 0:a0=a3!=null||a4!=null
+if(!a0||a2.a==="image/gif"){q=a2
 s=1
-break
-p=4
-j=a.c
-j===$&&A.b()
+break}p=4
+a0=a2.c
+a0===$&&A.b()
 s=7
-return A.P(n.a6l(j),$async$q5)
-case 7:m=a4
-i=m
-h=i.width
+return A.P(n.a6l(a0),$async$q5)
+case 7:m=a7
+j=m
+i=j.width
+i.toString
+h=j.height
 h.toString
-g=i.height
-g.toString
-f=new A.Y(h,g)
-e=Math.max(1,1)
-if(e>1)f=new A.Y(B.f.fJ(h,e),B.f.fJ(g,e))
-h=document.createElement("canvas")
+g=new A.Y(i,h)
+f=a3==null
+e=!f?i/a3:1
+d=a4==null
+c=!d?h/a4:1
+b=Math.max(e,c)
+if(b>1)g=new A.Y(B.f.fJ(i,b),B.f.fJ(h,b))
+i=document.createElement("canvas")
+i.toString
+i.width=B.c.T(g.a)
+i.height=B.c.T(g.b)
+h=i.getContext("2d")
 h.toString
-h.width=B.c.T(f.a)
-h.height=B.c.T(f.b)
-d=h.getContext("2d")
-d.drawImage(i,0,0)
-l=h
+if(d&&f)h.drawImage(j,0,0)
+else{f=i.width
+f.toString
+d=i.height
+d.toString
+h.drawImage(j,0,0,f,d)}l=i
 s=8
-return A.P(n.vq(a,l,a2),$async$q5)
-case 8:k=a4;(self.URL||self.webkitURL).revokeObjectURL(j)
+return A.P(n.vq(a2,l,a5),$async$q5)
+case 8:k=a7;(self.URL||self.webkitURL).revokeObjectURL(a0)
 q=k
 s=1
 break
@@ -67613,8 +67622,8 @@ p=2
 s=6
 break
 case 4:p=3
-b=o
-q=a
+a1=o
+q=a2
 s=1
 break
 s=6
@@ -67654,8 +67663,8 @@ $1(a){B.As.iR(this.a)
 this.b.it("Error while loading image.")},
 $S:46}
 A.Yv.prototype={
-VY(a,b,c,d,e,f){var s=t.N
-return B.EK.kk("pickImage",A.aL(["source",f.a,"maxWidth",c,"maxHeight",b,"imageQuality",a,"cameraDevice",d.a,"requestFullMetadata",!0],s,t.z),!1,s)},
+VY(a,b,c,d,e,f){var s="cannot be negative",r=t.N
+return B.EK.kk("pickImage",A.aL(["source",f.a,"maxWidth",c,"maxHeight",b,"imageQuality",a,"cameraDevice",d.a,"requestFullMetadata",!0],r,t.z),!1,r)},
 iY(a,b){return this.O0(a,b)},
 O0(a,b){var s=0,r=A.W(t.ju),q,p=this,o
 var $async$iY=A.R(function(c,d){if(c===1)return A.T(d,r)
@@ -67672,7 +67681,7 @@ A.B8.prototype={
 F(){return"CameraDevice."+this.b}}
 A.Do.prototype={}
 A.WQ.prototype={
-SG(a,b,c,d){}}
+SG(a,b,c,d){var s="cannot be negative"}}
 A.Dp.prototype={
 F(){return"ImageSource."+this.b}}
 A.RB.prototype={}
@@ -68856,8 +68865,8 @@ A.OT.prototype={
 k6(a){return this.NZ(a)},
 NZ(a){var s=0,r=A.W(t.z),q=this,p,o,n,m
 var $async$k6=A.R(function(b,c){if(b===1)return A.T(c,r)
-while(true)switch(s){case 0:n=new A.Do(B.jn,null,null,null,!0)
-n.SG(null,null,null,!0)
+while(true)switch(s){case 0:n=new A.Do(B.jn,500,500,null,!0)
+n.SG(null,500,500,!0)
 s=2
 return A.P($.amT().iY(n,a),$async$k6)
 case 2:p=c

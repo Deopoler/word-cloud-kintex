@@ -69513,7 +69513,7 @@ s.f=q
 q=(self.URL||self.webkitURL).createObjectURL(q)
 q.toString
 s.c=q
-A.afl(A.a([s],t.FQ),"\uad11\uc8fc\uc911\uc559\uace0\ub4f1\ud559\uad50 \uc18c\uc2a4\ucf54\ub4dc \ub3d9\uc544\ub9ac \uc6cc\ub4dc\ud074\ub77c\uc6b0\ub4dc\nhttps://deopoler.github.io/word-cloud-kintex/")},
+A.afl(A.a([s],t.FQ),"\uc790\uc2e0\ub9cc\uc758 \uc6cc\ub4dc\ud074\ub77c\uc6b0\ub4dc \uc0dd\uc131\ud558\uae30!\nhttps://deopoler.github.io/word-cloud-kintex/")},
 $S:0}
 A.tw.prototype={
 am(){return new A.Kr(null,null,B.l)}}

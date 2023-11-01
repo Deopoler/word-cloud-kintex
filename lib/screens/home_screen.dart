@@ -145,7 +145,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
                             Share.shareXFiles([file],
                                 text:
-                                    '광주중앙고등학교 소스코드 동아리 워드클라우드\nhttps://deopoler.github.io/word-cloud-kintex/');
+                                    '자신만의 워드클라우드 생성하기!\nhttps://deopoler.github.io/word-cloud-kintex/');
                           },
                         ),
                       ],

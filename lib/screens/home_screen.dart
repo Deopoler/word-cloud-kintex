@@ -2,6 +2,7 @@ import 'dart:typed_data';
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:share_plus/share_plus.dart';
 import 'package:word_cloud_kintex/services/wordcloud_service.dart';
 import 'package:word_cloud_kintex/widgets/example_image_tabbar_widget.dart';
 import 'package:word_cloud_kintex/widgets/select_album_listview_widget.dart';
@@ -118,18 +119,44 @@ class _HomeScreenState extends State<HomeScreen> {
                     fontSize: 20, fontWeight: FontWeight.w700),
               ),
             ),
+            const SizedBox(height: 50),
             FutureBuilder(
                 future: image,
                 builder: (context, snapshot) {
                   if (snapshot.hasData) {
-                    return Image.memory(snapshot.data!);
+                    return Column(
+                      children: [
+                        Image.memory(snapshot.data!),
+                        const SizedBox(height: 100),
+                        TextButton.icon(
+                          label: Text(
+                            'Share',
+                            style: GoogleFonts.poppins(
+                                fontSize: 20, fontWeight: FontWeight.bold),
+                          ),
+                          icon: const Icon(
+                            Icons.share,
+                            color: Colors.blue,
+                            size: 30,
+                          ),
+                          onPressed: () {
+                            final file = XFile.fromData(snapshot.data!,
+                                mimeType: 'image/png');
+
+                            Share.shareXFiles([file],
+                                text:
+                                    '광주중앙고등학교 소스코드 동아리 워드클라우드\nhttps://deopoler.github.io/word-cloud-kintex/');
+                          },
+                        ),
+                      ],
+                    );
                   } else if (snapshot.hasError) {
                     return Text(snapshot.error.toString());
                   } else {
                     return Container();
                   }
                 }),
-            const SizedBox(height: 300),
+            const SizedBox(height: 100),
           ],
         ),
       ),

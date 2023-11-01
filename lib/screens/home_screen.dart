@@ -141,7 +141,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           ),
                           onPressed: () {
                             final file = XFile.fromData(snapshot.data!,
-                                mimeType: 'image/png');
+                                mimeType: 'image/png', name: 'resultImage.png');
 
                             Share.shareXFiles([file],
                                 text:

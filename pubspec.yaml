@@ -1,5 +1,5 @@
 name: word_cloud_kintex
-description: A new Flutter project.
+description: 자신만의 워드클라우드 생성하기!
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: "none" # Remove this line if you wish to publish to pub.dev

@@ -14,8 +14,19 @@ class _SelectAlbumListViewState extends State<SelectAlbumListView> {
 
   final albumList = [
     ['여섯번째 여름', 'PLAVE', ''],
-    ['American Idiot', 'Green Day', ''],
-    ['Drones', 'Muse', '']
+    ['Jesus of Suburbia', 'Green Day', ''],
+    ['신호등', '이무진', ''],
+    ['Love Lee', '악동뮤지션', ''],
+    ['Kidding', '이세계아이돌', ''],
+    ['Super Shy', 'NewJeans', ''],
+    ['회전목마', 'Sokodomo', ''],
+    ['Warriors', 'Imagine Dragons', ''],
+    ['No Pain', '실리카겔', ''],
+    ['시차', '우원재', ''],
+    ['Fix You', 'Coldplay', ''],
+    ['에잇', '아이유', ''],
+    ['STAY', 'Justin Bieber', ''],
+    ['STAR WALKIN', 'Lil Nas X', ''],
   ];
 
   @override

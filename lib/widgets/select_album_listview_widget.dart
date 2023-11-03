@@ -20,7 +20,7 @@ class _SelectAlbumListViewState extends State<SelectAlbumListView> {
     ['Kidding', '이세계아이돌', ''],
     ['Super Shy', 'NewJeans', ''],
     ['회전목마', 'Sokodomo', ''],
-    ['Warriors', 'Imagine Dragons', ''],
+    ['Rise', 'The Glitch Mob', ''],
     ['No Pain', '실리카겔', ''],
     ['시차', '우원재', ''],
     ['Fix You', 'Coldplay', ''],

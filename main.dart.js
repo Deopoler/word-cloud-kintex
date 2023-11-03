@@ -69557,7 +69557,7 @@ s.b3$=null
 s.aW()}}
 A.wf.prototype={
 am(){var s=t.s
-return new A.NM(A.a([A.a(["\uc5ec\uc12f\ubc88\uc9f8 \uc5ec\ub984","PLAVE",""],s),A.a(["Jesus of Suburbia","Green Day",""],s),A.a(["\uc2e0\ud638\ub4f1","\uc774\ubb34\uc9c4",""],s),A.a(["Love Lee","\uc545\ub3d9\ubba4\uc9c0\uc158",""],s),A.a(["Kidding","\uc774\uc138\uacc4\uc544\uc774\ub3cc",""],s),A.a(["Super Shy","NewJeans",""],s),A.a(["\ud68c\uc804\ubaa9\ub9c8","Sokodomo",""],s),A.a(["Warriors","Imagine Dragons",""],s),A.a(["No Pain","\uc2e4\ub9ac\uce74\uac94",""],s),A.a(["\uc2dc\ucc28","\uc6b0\uc6d0\uc7ac",""],s),A.a(["Fix You","Coldplay",""],s),A.a(["\uc5d0\uc787","\uc544\uc774\uc720",""],s),A.a(["STAY","Justin Bieber",""],s),A.a(["STAR WALKIN","Lil Nas X",""],s)],t.rj),B.l)},
+return new A.NM(A.a([A.a(["\uc5ec\uc12f\ubc88\uc9f8 \uc5ec\ub984","PLAVE",""],s),A.a(["Jesus of Suburbia","Green Day",""],s),A.a(["\uc2e0\ud638\ub4f1","\uc774\ubb34\uc9c4",""],s),A.a(["Love Lee","\uc545\ub3d9\ubba4\uc9c0\uc158",""],s),A.a(["Kidding","\uc774\uc138\uacc4\uc544\uc774\ub3cc",""],s),A.a(["Super Shy","NewJeans",""],s),A.a(["\ud68c\uc804\ubaa9\ub9c8","Sokodomo",""],s),A.a(["Rise","The Glitch Mob",""],s),A.a(["No Pain","\uc2e4\ub9ac\uce74\uac94",""],s),A.a(["\uc2dc\ucc28","\uc6b0\uc6d0\uc7ac",""],s),A.a(["Fix You","Coldplay",""],s),A.a(["\uc5d0\uc787","\uc544\uc774\uc720",""],s),A.a(["STAY","Justin Bieber",""],s),A.a(["STAR WALKIN","Lil Nas X",""],s)],t.rj),B.l)},
 vR(a){return this.c.$1(a)}}
 A.NM.prototype={
 O(a){var s=A.cU(a,null,t.w).w
